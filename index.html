@@ -1,0 +1,241 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]--> <!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]--> <!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]--> <!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="UTF-8">
+  
+
+  <title>Web App Geek</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="stylesheets/normalize.css">
+  <link rel="stylesheet" href="stylesheets/reset.css">
+
+   <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>-->
+  <script src="js/libs/jquery-1.7.2.min.js"></script>
+  <script src="js/libs/handlebars-1.0.0.beta.6.js"></script>
+  <script src="js/libs/ember-1.0.0-pre.2.min.js"></script>
+  <script src="js/ga.js"></script>
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+
+  <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+  <!--[if IE]>
+      <link href="home/tarun/Desktop/EMBER_PROJECTS/webpage/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <![endif]-->
+
+<script>
+$('#myForm').ajaxSend( function() {
+    $(this).addClass('loading');
+});
+$('#myForm').ajaxComplete( function(){
+    $(this).removeClass('loading');
+});
+</script>
+  
+
+
+
+
+
+</head>
+<body>
+<h class="name">Tarun Chaudhary</h>
+  <ul class="social-links">
+      <li><a class="social-facebook rotate" href="https://www.facebook.com/tarun29061990" target="_blank"></a>
+      <a class="social-twitter rotate" href="https://www.twitter.com/tarun29061990" target="_blank"></a>
+        <a class="social-linkedin rotate" href="https://in.linkedin.com/in/tarun29061990/" target="_blank"></a>
+       <a class="social-googleplus rotate" href="https://plus.google.com/u/0/106980513185158775993/" target="_blank"></a></li>    
+    </ul>
+
+   <!-- <a href="https://github.com/tarun29061990"><img style="position: absolute; top: 0; left: 0; border: 0; height: 160px; width: 160px;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png" alt="Fork me on GitHub"></a>-->
+
+
+    <a href="https://github.com/tarun29061990" target="_blank"><img id="image_github" style="position: absolute; top: 0; right: 0; border: 0; height: 160px; width: 160px;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+     <div id="svg" ><svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <line  x1="0" y1="0" x2="1000" y2="0"
+  style="stroke:rgb(255,0,0);stroke-width:5"/>
+</svg></div>
+<!---->
+<!--<div id="circle1"><svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <circle cx="100" cy="50" r="4"
+  stroke-width="2" fill="red"/>
+</svg> 
+</div>
+<div id="circle2">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <circle cx="100" cy="50" r="4"
+  stroke-width="2" fill="red"/>
+  </svg> 
+</div>
+<div id="circle3">
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <circle cx="100" cy="50" r="4" 
+  stroke-width="2" fill="red"/>
+</svg>
+</div> -->
+
+<svg id="svg1" xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <line  x1="0" y1="0" x2="0" y2="5000"
+  style="stroke:#6D6E71;stroke-width:20;"/>
+</svg>
+    <script>
+    var x=$(window).width();
+    var y=$(window).height();
+    var image_github=document.getElementById("image_github");
+    image_github.style.left=(x-160)+"px";
+    var svg=document.getElementById("svg");
+    svg.style.position="absolute";
+    svg.style.left=(x-1050)+"px"
+    svg.style.top=70+"px";
+    svg.style.width=200+"px";
+
+    var svg1=document.getElementById("svg1");
+    svg1.style.position="absolute";
+    svg1.style.left=(x-30)+"px";
+    svg1.style.top=220+"px";
+    svg1.style.width=30+"px";
+    svg1.style.height=400+"px";
+    
+    
+
+   /* var circle1=document.getElementById("circle1");
+    circle1.style.position="absolute";
+    circle1.style.left=(x-1050+220)+"px"
+    circle1.style.top=22+"px";
+    
+    
+    var circle2=document.getElementById("circle2");
+    circle2.style.position="absolute";
+    circle2.style.left=(x-1050+240)+"px"
+    circle2.style.top=22+"px";
+    
+    
+    var circle3=document.getElementById("circle3");
+    circle3.style.position="absolute";
+    circle3.style.left=(x-1050+260)+"px"
+    circle3.style.top=22+"px";
+    */
+    </script>
+
+   
+  <script type="text/x-handlebars" data-template-name="application">
+    {{#each App.masterController}}
+      <img {{bindAttr src="me_url"}} alt="me"/>
+     {{/each}} 
+   
+
+    {{outlet "navigation"}}
+    
+   {{outlet}}
+  </script>
+
+
+  <script type="text/x-handlebars" data-template-name="navigation">
+       <div class="header">
+    {{#view view.NavItemView item="home"}}
+          <li class="about_text"><a {{action showAbout}}>About</a></li>
+    {{/view}}
+
+    {{#view view.NavItemView item="home"}}
+          <li class="blog_text"><a {{action showBlog}}>Blog</a></li>
+    {{/view}}
+
+    {{#view view.NavItemView item="projects"}}
+          <li class="projects_text"><a {{action showProjects}}>Projects</a></li>
+    {{/view}}
+
+    {{#view view.NavItemView item="contact"}}
+          <li class="contact_text"><a {{action showContact}}>Contact</a></li>
+    {{/view}}
+    </div>
+    <li class="footer">Copyright 2013 &copy; Tarun Chaudhary</li>
+    
+  </script>
+ 
+
+  <script type="text/x-handlebars" data-template-name="about">
+  <div class="about" id="about">
+  <h style="font:30px bold">About Me:</h><br></br>
+  <article>
+  Hi.....<br></br> I am Tarun Chaudhary. My Journey Started on 29<sup>th</sup> of June 1990 at Kota (Rajasthan). I am a  graduate from <strong>IIT Rajasthan</strong>, Electrical Engg. <br></br>I love writing Programs and  I am crazy about Web applications and want to conquer the whole web world. I love to explore and develop new things.
+    <br></br>In my free time I love to play guitar, Write poems and party with friends. 
+  </article>
+  </div>
+  </script>
+
+  <script type="text/x-handlebars" data-template-name="blog">
+  <div class="blog" id="blog">
+  <h style="font:30px bold">My Blogs:</h><br></br>
+  <article>
+  My passion for writing pushed me to create a blog  and there they are:
+  
+  <br></br>My Technical Blog can be visited <a target="_blank" href="https://activegeek22.wordpress.com">here</a>. This blog has not much post in it but I will soon update it with new things.
+  <br></br>My Blog full of my poems can be visited <a target="_blank" href="http://adifferentway20.blogspot.com">here</a>. It is a result of my Free time and my passion towards writing poems.
+
+  
+  </article>
+  </div>
+  </script>
+
+  <script type="text/x-handlebars" data-template-name="projects">
+  <div class="projects" id="projects">
+  <h style="font:30px bold">Projects:</h><br></br>
+ <article>
+ I Love to learn and develop new things. <br></br>So if you want to have a look at my projects then you can visit my <a href="https://github.com/tarun29061990">Github account</a> <br></br>You can go directly by clicking on the Red coloured flag at the top-right corner. <br></br>I haven&apos;t uploaded all my Projects but there are some useful ones.
+ </article>
+  </div>
+  </script>
+
+  
+  <script type="text/x-handlebars" data-template-name="contact">
+  <div class="contact" id="contact">
+  <h style="font: 30px bold">Contact Me:</h><br></br>
+  <article>
+    Hey thanks for contacting me... If you have any questions or just want to say hi!!... <br>Connect with me by simply filling up the form below.. Thanks and have a great day..
+  </article>
+  <form id="contactform">
+  <label id="namelabel" for="name">Name:</label>&nbsp
+  <div id="namefield">
+  {{view App.NameTextView placeholder="Name" valueBinding="App.ContactController.name"}}
+  </div>
+  <br></br>
+  <label id="emaillabel" for="email">Email:</label>&nbsp
+  <div id="emailfield">
+  {{view App.EmailTextView placeholder="Email" valueBinding="App.ContactController.email"}}
+  </div>
+  <br></br>
+  <label id="messagelabel" for="message">Message:</label>&nbsp
+  <div id="messagefield">
+  {{view App.MessageTextView placeholder="Message" valueBinding="App.ContactController.message"}}
+  </div>
+  <br></br>
+  
+  <button {{action "sendmail" target="App.ContactController"}}>Connect</button>
+ </form>
+  </div>
+  </script>
+
+  <!-- The missing protocol means that it will match the current protocol, either http or https. If running locally, we use the local jQuery. -->
+
+
+ 
+ <script src="js/app.js"></script>
+
+ 
+
+
+
+</body>
+</html>
+

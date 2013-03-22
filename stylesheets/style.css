@@ -1,0 +1,283 @@
+.social-sprite, .social-facebook, .social-googleplus, .social-linkedin, .social-twitter {
+  background: url('/home/tarun/Desktop/EMBER_PROJECTS/app/images/social-s9bf07bb892.png') no-repeat;
+}
+
+.social-facebook {
+  background-position: 0 0;
+}
+
+.social-googleplus {
+  background-position: 0 -50px;
+}
+
+.social-linkedin {
+  background-position: 0 -100px;
+}
+
+.social-twitter {
+  background-position: 0 -150px;
+}
+
+.rotate {
+  overflow: hidden;
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+  -webkit-transition-property: rotate();
+  -moz-transition-property: rotate();
+  -o-transition-property: rotate();
+  transition-property: rotate();
+}
+.rotate:hover {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.loading {
+  display: block;
+  background: url(/images/spinner.gif) no-repeat center middle;
+  width: 124px;
+  height: 124px;
+  margin: 0 auto;
+}
+
+/* Hide all the children of the 'loading' element */
+.loading * {
+  display: none;
+}
+
+html {
+  background: url("../images/code.jpg") no-repeat fixed center center/cover transparent;
+  font-size: 100%;
+}
+
+body {
+  /*.social-facebook{
+  position:absolute;
+  left:0px;
+  }
+  .social-twitter{
+  position:absolute;
+  left:80px;
+  }
+  .social-linkedin{
+  position:absolute;
+  left:160px;
+  }
+  .social-googleplus{
+  position:absolute;
+  left:240px;
+  }	*/
+}
+body .name {
+  font: 40px bold Georgia serif;
+  position: absolute;
+  top: 20px;
+  left: 120px;
+  text-shadow: 1px 1px 0px #404442;
+}
+body ul {
+  list-style: none;
+  display: inline;
+  position: absolute;
+  left: 30px;
+  top: 560px;
+}
+body ul li a {
+  display: block;
+  padding: 0px 10px 0px 0px;
+  float: left;
+  width: 50px;
+  height: 50px;
+  text-indent: -900px;
+}
+body img {
+  position: absolute;
+  top: 140px;
+  height: 400px;
+  width: 250px;
+  left: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+body .header {
+  position: absolute;
+  top: 280px;
+  left: 1180px;
+  list-style: none;
+}
+body .header li {
+  background: none repeat scroll 0 0 #6D6E71;
+  width: 93px;
+  border-radius: 10px 0px 0px 5px;
+  -webkit-border-radius: 10px 0px 0px 5px;
+  -moz-border-radius: 10px 0px 0px 5px;
+  -o-border-radius: 10px 0px 0px 5px;
+}
+body .header li:hover {
+  background-color: #FD6125;
+}
+body .header li a {
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 2px;
+  font-size: 25px;
+}
+body .about_text {
+  position: absolute;
+  color: #FFFFFF;
+  display: inline-block;
+}
+body .blog_text {
+  position: absolute;
+  top: 40px;
+  color: #FFFFFF;
+  display: inline-block;
+}
+body .projects_text {
+  position: absolute;
+  top: 80px;
+  color: #FFFFFF;
+  display: inline-block;
+}
+body .contact_text {
+  position: absolute;
+  top: 120px;
+  color: #FFFFFF;
+  display: inline-block;
+}
+body .footer {
+  background-color: #6D6E71;
+  font-size: 18px;
+  position: absolute;
+  padding-left: 10px;
+  left: 870px;
+  top: 600px;
+  width: 400px;
+  border-radius: 10px 0px 0px 5px;
+  -webkit-border-radius: 10px 0px 0px 5px;
+  -moz-border-radius: 10px 0px 0px 5px;
+  -o-border-radius: 10px 0px 0px 5px;
+  color: #FFFFFF;
+  display: inline-block;
+}
+body .about {
+  position: absolute;
+  top: 150px;
+  left: 420px;
+  height: 430px;
+  width: 700px;
+}
+body .about article {
+  line-height: 120%;
+}
+body .blog {
+  position: absolute;
+  top: 150px;
+  left: 420px;
+  height: 430px;
+  width: 700px;
+}
+body .blog article {
+  line-height: 120%;
+}
+body .blog article a {
+  text-decoration: none;
+  background: orange;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+body .projects {
+  position: absolute;
+  top: 150px;
+  left: 420px;
+  height: 430px;
+  width: 700px;
+}
+body .projects article {
+  line-height: 120%;
+}
+body .projects article a {
+  text-decoration: none;
+  background: orange;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+body .contact {
+  position: absolute;
+  top: 150px;
+  left: 420px;
+  height: 430px;
+  width: 700px;
+}
+body .contact article {
+  line-height: 100%;
+}
+body .contact #contactform {
+  position: absolute;
+  top: 60px;
+  left: 40px;
+}
+body .contact #contactform #namelabel {
+  position: absolute;
+  top: 53px;
+}
+body .contact #contactform #namefield {
+  position: absolute;
+  left: 80px;
+  top: 50px;
+}
+body .contact #contactform #emaillabel {
+  position: absolute;
+  top: 100px;
+}
+body .contact #contactform #emailfield {
+  position: absolute;
+  top: 97px;
+  left: 80px;
+}
+body .contact #contactform #messagelabel {
+  position: absolute;
+  top: 145px;
+}
+body .contact #contactform #messagefield {
+  position: absolute;
+  top: 145px;
+  left: 80px;
+}
+body .contact #contactform button {
+  position: absolute;
+  background: orange;
+  top: 250px;
+  left: 100px;
+  width: 120px;
+  height: 50px;
+  color: black;
+  font: 20px bold;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+  -webkit-transition-property: scale();
+  -moz-transition-property: scale();
+  -o-transition-property: scale();
+  transition-property: scale();
+}
+body .contact #contactform button:hover {
+  -webkit-transform: scale(1.3, 1.3);
+  -moz-transform: scale(1.3, 1.3);
+  -ms-transform: scale(1.3, 1.3);
+  -o-transform: scale(1.3, 1.3);
+  transform: scale(1.3, 1.3);
+}

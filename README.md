@@ -1,4 +1,3 @@
-tarun29061990.com
-=================
+So Finally My wepage is up and running at www.tarun29061990.com 
 
-My Webpage in Ember.js
+I have coded this in Ember.js and used little bit of ajax and PHP for contact thing. Css sprites and css transitions made it nicer ... have a look ... you can use this code to learn how routing take place in ember.js .. I have used saas and compass for styling... 

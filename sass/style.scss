@@ -1,0 +1,311 @@
+@import "compass";
+
+$social-layout:smart;
+$social-spacing:20px;
+$background-color:#81F7F3;
+$background-color2:#CEF6F5;
+$background:#A8A8A8;
+
+@import "social/*.png";
+@include all-social-sprites;
+
+@mixin border-radius($radius: 20px)
+{
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
+.rotate {
+    overflow: hidden;
+    @include transition-duration(0.8s);
+    @include transition-property(rotate());
+    &:hover{
+   	@include rotate(360deg);
+    }
+}
+
+.loading {
+    display: block;
+    background: url(/images/spinner.gif) no-repeat center middle;
+    width: 124px;
+    height: 124px;
+    margin: 0 auto;
+}
+/* Hide all the children of the 'loading' element */
+.loading * {
+    display: none;  
+}
+
+html {
+    background: url("../images/code.jpg") no-repeat fixed center center / cover transparent;
+    
+    font-size: 100%;
+}
+body{
+	 //@include background-image(linear-gradient(left top, $background-color, $background-color2));
+
+		 
+	 	.name{
+	 		font:40px bold Georgia serif;
+	 		position:absolute;
+	 		top:20px;
+	 		left:120px;
+	 		text-shadow: 1px 1px 0px #404442;
+	 	}
+ 
+		ul{
+			list-style:none;
+			display:inline;
+
+			position:absolute;
+			left:30px;
+			top:560px;
+			li a{
+				display:block;
+				padding:0px 10px 0px 0px;
+				float:left;
+				width:50px;
+				height:50px;
+				text-indent:-900px;
+				&:hover{
+
+				}
+		
+			}
+		}	
+
+		/*.social-facebook{
+		position:absolute;
+		left:0px;
+		}
+		.social-twitter{
+		position:absolute;
+		left:80px;
+		}
+		.social-linkedin{
+		position:absolute;
+		left:160px;
+		}
+		.social-googleplus{
+		position:absolute;
+		left:240px;
+		}	*/						             
+
+	
+
+			img{
+				position:absolute;
+				top:140px;
+				height:400px;
+				width:250px;
+				left:20px;
+				@include border-radius();
+			}
+			.header{
+
+				position:absolute;
+				top:280px;
+				left:1180px;
+				list-style:none;
+
+
+					li{
+						background:none repeat scroll 0 0 #6D6E71;
+						width:93px;
+						border-radius:10px 0px 0px 5px;
+						-webkit-border-radius:10px 0px 0px 5px;
+						-moz-border-radius:10px 0px 0px 5px;
+						-o-border-radius:10px 0px 0px 5px;
+						&:hover{
+								background-color:#FD6125;
+							}
+						
+						
+						
+						a{
+							cursor:pointer;
+							text-decoration:none;
+							display:inline-block;
+							
+							margin-left:2px;
+							font-size:25px;
+							
+						}
+					}
+			}
+
+			.about_text{
+				
+				
+				position:absolute;
+				color:#FFFFFF;
+				display:inline-block;
+
+				
+			}
+
+			.blog_text{
+				
+				
+				position:absolute;
+				top:40px;
+				color:#FFFFFF;
+				display:inline-block;
+
+				
+			}
+
+			.projects_text{
+				
+				
+				position:absolute;
+				top:80px;
+				
+				color:#FFFFFF;
+				display:inline-block;
+				
+			}
+			.contact_text{
+				
+				
+				position:absolute;
+				top:120px;
+				
+				color:#FFFFFF;
+				display:inline-block;
+				
+			}	
+
+			.footer{
+				
+				background-color:#6D6E71;
+				font-size:18px;
+				position:absolute;
+				padding-left:10px;
+				left:870px;
+				top:600px;
+				width:400px;
+				border-radius:10px 0px 0px 5px;
+				-webkit-border-radius:10px 0px 0px 5px;
+				-moz-border-radius:10px 0px 0px 5px;
+				-o-border-radius:10px 0px 0px 5px;
+				color:#FFFFFF;
+				display:inline-block;
+				
+			}		
+
+		.about{
+			position:absolute;
+			top: 150px;
+			left: 420px;
+			height:430px;
+			width:700px;
+			article{
+			line-height:120%;
+			}
+		}
+
+		.blog{
+			position:absolute;
+			top: 150px;
+			left: 420px;
+			height:430px;
+			width:700px;
+			article{
+			line-height:120%;
+			a{
+				text-decoration:none;
+				background:orange;
+				@include border-radius(5px);
+
+			}
+			}
+		}
+
+		.projects{
+			position:absolute;
+			top: 150px;
+			left: 420px;
+			height:430px;
+			width:700px;
+			article{
+			line-height:120%;
+			a{
+				text-decoration:none;
+				background:orange;
+				@include border-radius(5px);
+
+			}
+			}
+		}
+
+		.contact{
+			position:absolute;
+			top: 150px;
+			left: 420px;
+			height:430px;
+			width:700px;
+			article{
+					line-height:100%;
+				}
+			#contactform{
+				position:absolute;
+				top:60px;
+				left:40px;
+				
+			
+
+			#namelabel{
+				position:absolute;
+				top:53px;
+			}
+
+			#namefield{
+				position:absolute;
+				left:80px;
+				top:50px;
+			}
+
+			#emaillabel{
+				position:absolute;
+				top:100px;
+				
+			}
+
+			#emailfield{
+				position:absolute;
+				top: 97px;
+				left:80px;
+			}
+
+			#messagelabel{
+				position:absolute;
+				top:145px;
+			}
+			#messagefield{
+				position:absolute;
+				top: 145px;
+				left:80px;
+			}
+
+			button{
+				position:absolute;
+				background:orange;
+				top:250px;
+				left:100px;
+				width:120px;
+				height:50px;
+				color:black;
+				font:20px bold;
+				@include border-radius();
+				@include transition-duration(0.8s);
+    			@include transition-property(scale());
+    			&:hover{
+    				@include scale(1.3);
+    			}
+			}
+		  }
+		}
+
+}
