@@ -132,8 +132,6 @@ App.masterController=Ember.ArrayController.create({
 /***ROUTER***/
 
 App.Router=Ember.Router.extend({
-	 enableLogging: true,
-	location: 'hash',
 	root:Ember.Route.extend({
 
 		showAbout:Ember.Route.transitionTo('about'),

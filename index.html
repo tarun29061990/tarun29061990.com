@@ -9,11 +9,12 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width">
 
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="stylesheet" href="stylesheets/style.css">
+  <link media="screen, projection" rel="stylesheet" type="text/css"
+    href="stylesheets/style.css">
   <link rel="stylesheet" href="stylesheets/normalize.css">
   <link rel="stylesheet" href="stylesheets/reset.css">
 
@@ -61,7 +62,7 @@ $('#myForm').ajaxComplete( function(){
    <!-- <a href="https://github.com/tarun29061990"><img style="position: absolute; top: 0; left: 0; border: 0; height: 160px; width: 160px;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png" alt="Fork me on GitHub"></a>-->
 
 
-    <a href="https://github.com/tarun29061990" target="_blank"><img id="image_github" style="position: absolute; top: 0; right: 0; border: 0; height: 160px; width: 160px;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+    <a href="https://github.com/tarun29061990" target="_blank"><img id="image_github" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
      <div id="svg" ><svg xmlns="http://www.w3.org/2000/svg" version="1.1">
   <line  x1="0" y1="0" x2="1000" y2="0"
   style="stroke:rgb(255,0,0);stroke-width:5"/>
@@ -89,45 +90,6 @@ $('#myForm').ajaxComplete( function(){
   <line  x1="0" y1="0" x2="0" y2="5000"
   style="stroke:#6D6E71;stroke-width:20;"/>
 </svg>
-    <script>
-    var x=$(window).width();
-    var y=$(window).height();
-    var image_github=document.getElementById("image_github");
-    image_github.style.left=(x-160)+"px";
-    var svg=document.getElementById("svg");
-    svg.style.position="absolute";
-    svg.style.left=(x-1050)+"px"
-    svg.style.top=70+"px";
-    svg.style.width=200+"px";
-
-    var svg1=document.getElementById("svg1");
-    svg1.style.position="absolute";
-    svg1.style.left=(x-30)+"px";
-    svg1.style.top=220+"px";
-    svg1.style.width=30+"px";
-    svg1.style.height=400+"px";
-    
-    
-
-   /* var circle1=document.getElementById("circle1");
-    circle1.style.position="absolute";
-    circle1.style.left=(x-1050+220)+"px"
-    circle1.style.top=22+"px";
-    
-    
-    var circle2=document.getElementById("circle2");
-    circle2.style.position="absolute";
-    circle2.style.left=(x-1050+240)+"px"
-    circle2.style.top=22+"px";
-    
-    
-    var circle3=document.getElementById("circle3");
-    circle3.style.position="absolute";
-    circle3.style.left=(x-1050+260)+"px"
-    circle3.style.top=22+"px";
-    */
-    </script>
-
    
   <script type="text/x-handlebars" data-template-name="application">
     {{#each App.masterController}}
@@ -139,12 +101,32 @@ $('#myForm').ajaxComplete( function(){
     
    {{outlet}}
   </script>
+  <script>
+  document.getElementsByClassName = function(cl) {
+var retnode = [];
+var myclass = new RegExp('\\b'+cl+'\\b');
+var elem = this.getElementsByTagName('*');
+for (var i = 0; i < elem.length; i++) {
+var classes = elem[i].className;
+if (myclass.test(classes)) retnode.push(elem[i]);
+}
+return retnode;
+}; 
+  var i=0;
+  var about_text=document.getElementsByClassName("header");
+  var x=$(window).width();
+  var y=$(window).height();
+  console.log("Width"+x);
+  console.log("Height"+y);
+  console.log(about_text.length);
+ 
+  </script>
 
 
   <script type="text/x-handlebars" data-template-name="navigation">
-       <div class="header">
+       <div class="header" id="header">
     {{#view view.NavItemView item="home"}}
-          <li class="about_text"><a {{action showAbout}}>About</a></li>
+          <li class="about_text" id="about_text"><a {{action showAbout}}>About</a></li>
     {{/view}}
 
     {{#view view.NavItemView item="home"}}

@@ -55,65 +55,75 @@ html {
   font-size: 100%;
 }
 
-body {
-  /*.social-facebook{
-  position:absolute;
-  left:0px;
-  }
-  .social-twitter{
-  position:absolute;
-  left:80px;
-  }
-  .social-linkedin{
-  position:absolute;
-  left:160px;
-  }
-  .social-googleplus{
-  position:absolute;
-  left:240px;
-  }	*/
+body #image_github {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  border: 0%;
+  left: 87%;
+  height: 27%;
+  width: 13%;
+}
+body #svg {
+  position: absolute;
+  left: 19%;
+  top: 12%;
+  width: 200px;
+}
+body #svg1 {
+  position: absolute;
+  left: 98%;
+  top: 35%;
+  width: 30px;
+  height: 59%;
 }
 body .name {
-  font: 40px bold Georgia serif;
+  font: 2.5em bold Georgia serif;
   position: absolute;
-  top: 20px;
-  left: 120px;
+  top: 3%;
+  left: 10%;
   text-shadow: 1px 1px 0px #404442;
 }
 body ul {
   list-style: none;
   display: inline;
   position: absolute;
-  left: 30px;
-  top: 560px;
+  left: 3%;
+  top: 85%;
+}
+body ul li {
+  width: 240px;
+  height: 50px;
 }
 body ul li a {
   display: block;
   padding: 0px 10px 0px 0px;
   float: left;
-  width: 50px;
-  height: 50px;
+  width: 20%;
+  height: 100%;
   text-indent: -900px;
 }
 body img {
   position: absolute;
-  top: 140px;
-  height: 400px;
-  width: 250px;
-  left: 20px;
+  top: 20%;
+  height: 60%;
+  width: 19%;
+  left: 2%;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
 }
 body .header {
   position: absolute;
-  top: 280px;
-  left: 1180px;
+  top: 40%;
+  left: 91%;
   list-style: none;
+  width: 95px;
+  height: 370px;
 }
 body .header li {
+  width: 98%;
   background: none repeat scroll 0 0 #6D6E71;
-  width: 93px;
   border-radius: 10px 0px 0px 5px;
   -webkit-border-radius: 10px 0px 0px 5px;
   -moz-border-radius: 10px 0px 0px 5px;
@@ -127,7 +137,7 @@ body .header li a {
   text-decoration: none;
   display: inline-block;
   margin-left: 2px;
-  font-size: 25px;
+  font-size: 1.5em;
 }
 body .about_text {
   position: absolute;
@@ -136,30 +146,30 @@ body .about_text {
 }
 body .blog_text {
   position: absolute;
-  top: 40px;
+  top: 11%;
   color: #FFFFFF;
   display: inline-block;
 }
 body .projects_text {
   position: absolute;
-  top: 80px;
+  top: 22%;
   color: #FFFFFF;
   display: inline-block;
 }
 body .contact_text {
   position: absolute;
-  top: 120px;
+  top: 33%;
   color: #FFFFFF;
   display: inline-block;
 }
 body .footer {
   background-color: #6D6E71;
-  font-size: 18px;
+  font-size: 1.17em;
   position: absolute;
   padding-left: 10px;
-  left: 870px;
-  top: 600px;
-  width: 400px;
+  left: 67%;
+  top: 90%;
+  width: 31%;
   border-radius: 10px 0px 0px 5px;
   -webkit-border-radius: 10px 0px 0px 5px;
   -moz-border-radius: 10px 0px 0px 5px;
@@ -169,20 +179,20 @@ body .footer {
 }
 body .about {
   position: absolute;
-  top: 150px;
-  left: 420px;
-  height: 430px;
-  width: 700px;
+  top: 25%;
+  left: 30%;
+  height: 64%;
+  width: 55%;
 }
 body .about article {
   line-height: 120%;
 }
 body .blog {
   position: absolute;
-  top: 150px;
-  left: 420px;
-  height: 430px;
-  width: 700px;
+  top: 25%;
+  left: 30%;
+  height: 64%;
+  width: 55%;
 }
 body .blog article {
   line-height: 120%;
@@ -196,10 +206,10 @@ body .blog article a {
 }
 body .projects {
   position: absolute;
-  top: 150px;
-  left: 420px;
-  height: 430px;
-  width: 700px;
+  top: 25%;
+  left: 30%;
+  height: 64%;
+  width: 55%;
 }
 body .projects article {
   line-height: 120%;
@@ -213,18 +223,20 @@ body .projects article a {
 }
 body .contact {
   position: absolute;
-  top: 150px;
-  left: 420px;
-  height: 430px;
-  width: 700px;
+  top: 25%;
+  left: 30%;
+  height: 64%;
+  width: 55%;
 }
 body .contact article {
   line-height: 100%;
 }
 body .contact #contactform {
   position: absolute;
-  top: 60px;
-  left: 40px;
+  top: 15%;
+  left: 10%;
+  width: 50%;
+  height: 80%;
 }
 body .contact #contactform #namelabel {
   position: absolute;
@@ -256,12 +268,12 @@ body .contact #contactform #messagefield {
 body .contact #contactform button {
   position: absolute;
   background: orange;
-  top: 250px;
-  left: 100px;
-  width: 120px;
-  height: 50px;
+  top: 75%;
+  left: 20%;
+  width: 40%;
+  height: 15%;
   color: black;
-  font: 20px bold;
+  font: 1.5em bold;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
